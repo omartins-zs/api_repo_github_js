@@ -19,6 +19,7 @@ function getApiGithub() {
                 <strong>${item.name.toUpperCase()}</strong>
                 <span>${item.url}</span>
                 <span>Data Criação: ${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
+                <span> Privacidade:  ${item.private ? 'Privado' : 'Público'}</span>
                 `
 
                 // Adicionando a li dentro do UL
