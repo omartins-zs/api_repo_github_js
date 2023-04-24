@@ -11,10 +11,22 @@ body {
     justify-content: center;
     background-color: #030518;
     color: white;
+    /* Faz quebrar a linha em Dispositivos pequenos */
     word-break: break-all;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+li span {
+    margin: 10px;
 }
 
 main {}
 
-
-h1 {}
+h1 {
+    margin: 20px auto;
+}
